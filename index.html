@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Me Holding a Banana</title>
+        <script>
+            function doMultiplication() {
+                const input1 = prompt('Please enter first number.');
+                
+                if (isNaN(input1)) {
+                    alert('Input 1 should be a number');
+                    return;
+                }
+
+                const input2 = prompt('Please enter second number.');
+                
+                if (isNaN(input2)) {
+                    alert('Input 2 should be a number');
+                    return;
+                }
+
+                const answer = input1 * input2;
+
+                alert(`Your answer is: ${answer}!`);
+            }
+
+            function doDivision() {
+                const input1 = prompt('Enter the number to divide.');
+
+                if (isNaN(input1)) {
+                    alert('Input 1 should be a number');
+                    return
+                }
+
+                const input2 = prompt('Enter the number to divide by.');
+
+                if (isNaN(input2)) {
+                    alert('Input 2 should be a number');
+                    return
+                }
+
+                const answer = input1 / input2;
+
+                alert(`Your answer is: ${answer}!`);
+            }
+        </script>
+    </head>
+    <body>
+        <p>
+            <img src="images/banana_small.png" alt="Banana" />
+            I ate this funneh banana :O
+        </p>
+
+        <button onclick="doMultiplication()">Lets Multiply!</button>
+        <button onclick="doDivision()">Lets Divide!</button>
+        <button onclick="typeanythingyouwantevenletters()">Type antything you want even letters!</button>
+    </body>
+    <script>
+        function typeanythingyouwantevenletters() {
+            const imput1 = prompt('Pls type anything you want. Even letters!');
+
+            alert(imput1)
+        }
+    </script>
+</html>
